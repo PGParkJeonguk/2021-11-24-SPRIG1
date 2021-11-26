@@ -22,10 +22,10 @@
 		<!-- resource에서 찾는다. -->
 		<property name="configLocation" value="classpath:config/mybatis-config.xml"/> 
 		<!-- 자바파일에서 찾는다. -->
-		<property name="mapperLocations" value="classpath*:co.micol.lms/**/service/*-map.xml"/> 
+		<property name="mapperLocations" value="classpath*:co/micol/lms/**/service/*-map.xml" />
 	</bean>
 	
-	<bean id="sqlsession" class="org.mybatis.spring.SqlSessionTemplate">
+	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
 		<constructor-arg ref="sqlSessionFactory"/>
 	</bean>
 	
